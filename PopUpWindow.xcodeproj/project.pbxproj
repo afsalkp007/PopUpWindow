@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C25FBB2222EF29300068CBAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB2122EF29300068CBAB /* AppDelegate.swift */; };
-		C25FBB2422EF29300068CBAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB2322EF29300068CBAB /* ViewController.swift */; };
 		C25FBB2722EF29300068CBAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25FBB2522EF29300068CBAB /* Main.storyboard */; };
 		C25FBB2922EF29320068CBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25FBB2822EF29320068CBAB /* Assets.xcassets */; };
 		C25FBB2C22EF29320068CBAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25FBB2A22EF29320068CBAB /* LaunchScreen.storyboard */; };
+		C25FBB3E22EF2BB90068CBAB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB3D22EF2BB90068CBAB /* PopUpViewController.swift */; };
+		C25FBB4022EF2BF40068CBAB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB3F22EF2BF40068CBAB /* Extensions.swift */; };
+		C25FBB4222EF303F0068CBAB /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB4122EF303F0068CBAB /* PopUpWindow.swift */; };
+		C25FBB4422EF38AC0068CBAB /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25FBB4322EF38AC0068CBAB /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C25FBB1E22EF29300068CBAB /* PopUpWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopUpWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25FBB2122EF29300068CBAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C25FBB2322EF29300068CBAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C25FBB2622EF29300068CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C25FBB2822EF29320068CBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C25FBB2B22EF29320068CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C25FBB2D22EF29320068CBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25FBB3D22EF2BB90068CBAB /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		C25FBB3F22EF2BF40068CBAB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C25FBB4122EF303F0068CBAB /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
+		C25FBB4322EF38AC0068CBAB /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		C25FBB2022EF29300068CBAB /* PopUpWindow */ = {
 			isa = PBXGroup;
 			children = (
+				C25FBB3C22EF2B160068CBAB /* Utils */,
+				C25FBB3B22EF2AFD0068CBAB /* Model */,
+				C25FBB3422EF2AEC0068CBAB /* View */,
+				C25FBB3322EF2AE70068CBAB /* Controller */,
 				C25FBB2122EF29300068CBAB /* AppDelegate.swift */,
-				C25FBB2322EF29300068CBAB /* ViewController.swift */,
 				C25FBB2522EF29300068CBAB /* Main.storyboard */,
 				C25FBB2822EF29320068CBAB /* Assets.xcassets */,
 				C25FBB2A22EF29320068CBAB /* LaunchScreen.storyboard */,
 				C25FBB2D22EF29320068CBAB /* Info.plist */,
 			);
 			path = PopUpWindow;
+			sourceTree = "<group>";
+		};
+		C25FBB3322EF2AE70068CBAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C25FBB3D22EF2BB90068CBAB /* PopUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C25FBB3422EF2AEC0068CBAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C25FBB4122EF303F0068CBAB /* PopUpWindow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C25FBB3B22EF2AFD0068CBAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C25FBB3C22EF2B160068CBAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C25FBB3F22EF2BF40068CBAB /* Extensions.swift */,
+				C25FBB4322EF38AC0068CBAB /* Protocols.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25FBB2422EF29300068CBAB /* ViewController.swift in Sources */,
+				C25FBB4422EF38AC0068CBAB /* Protocols.swift in Sources */,
+				C25FBB4222EF303F0068CBAB /* PopUpWindow.swift in Sources */,
 				C25FBB2222EF29300068CBAB /* AppDelegate.swift in Sources */,
+				C25FBB4022EF2BF40068CBAB /* Extensions.swift in Sources */,
+				C25FBB3E22EF2BB90068CBAB /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
